@@ -39,13 +39,22 @@ header {
     justify-content: space-between;
     z-index: 3;
     background: white;
-    /* border: 1px solid black; */
 }
 
 .logo-container a {
     font-size: 1.5rem;
     font-weight: 800;
+    color: rgb(250, 148, 13);
 }
+.logo-container div {
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.logo-img{
+    width: 80px!important;
+    display: inline-block!important;
+ }
 
 .nav-container nav ul {
    gap: 3rem; 
@@ -326,6 +335,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #f9f9f9;
+    margin: 10px;
 }
 
 .choose-container > div {
@@ -370,6 +380,8 @@ header {
     gap: 1rem;
     box-shadow: 10px 22px 32px rgba(0, 0, 0, 0.02);
     padding-inline: 1.5rem;
+    transition: all .5s;
+
 }
 
 .align-left-corner {
@@ -380,11 +392,13 @@ header {
 .choose-point-item:hover {
     background: linear-gradient(90deg, #15082c, #5f12c5);
     color: white;
+    transition: all .5s;
+
 }
 
 .circle {
     width: 28%;
-    height: 7.5rem;
+    height: 7rem;
     background-color: #fff1d4;
     border-radius: 50%;
     display: flex;
@@ -476,8 +490,9 @@ header {
 }
 
 .client-testimonial-section {
-    width: 100%;
+    width: 90%;
     height: 100vh;
+    margin: auto;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -581,7 +596,7 @@ header {
 
 .product-item img{
     aspect-ratio: 16/9;
-    width: 400px;
+    width: 100%;
     border-radius: 1rem;
 
 }
@@ -641,6 +656,9 @@ header {
     font-size: 3rem;
 }
 
+.logo-container img{
+    width: 55%;
+}
 .footer-container {
     flex-direction: column;
     align-items: center;
