@@ -225,6 +225,12 @@
         width: 80vw;
     }
 
+    /* contact us section */
+
+    .contact-form {
+        width: 90vw;
+    }
+
     /* footer responsive */
 
     .footer-section {
