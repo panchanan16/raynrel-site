@@ -364,11 +364,11 @@ img.landing-slider {
 .check {
     border-bottom: 10px solid #f6f2f8;
     padding-bottom: 60px;
-    padding-top: 80px;
+    /* padding-top: 80px; */
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .state {
@@ -1320,7 +1320,7 @@ footer:before {
     background-color: #ad6902;
     opacity: .9;
     left: 0;
-    border-radius: 25px;
+    border-radius: 25px 25px 0 0;
 }
 
 .book-free {
