@@ -808,9 +808,13 @@ form.get-a-quote i {
 }
 
 .partner.item img {
-    width: auto;
+    width: 180px;
 }
 
+.partner img {
+    width: 180px!important;
+    border-radius: 13px;
+}
 
 /* 12. team */
 
