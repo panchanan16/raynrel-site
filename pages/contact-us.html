@@ -12,6 +12,54 @@
     <link rel="stylesheet" href="../css/responsive.css">
     <title>Contact Us</title>
 </head>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+
+    gmpx-store-locator {
+        width: 100%;
+        height: 100%;
+
+        /* These parameters customize the appearance of Locator Plus. See the documentation at
+         https://github.com/googlemaps/extended-component-library/blob/main/src/store_locator/README.md
+         for more information. */
+        --gmpx-color-surface: #fff;
+        --gmpx-color-on-surface: #212121;
+        --gmpx-color-on-surface-variant: #757575;
+        --gmpx-color-primary: #1967d2;
+        --gmpx-color-outline: #e0e0e0;
+        --gmpx-fixed-panel-width-row-layout: 28.5em;
+        --gmpx-fixed-panel-height-column-layout: 65%;
+        --gmpx-font-family-base: "Roboto", sans-serif;
+        --gmpx-font-family-headings: "Roboto", sans-serif;
+        --gmpx-font-size-base: 0.875rem;
+        --gmpx-hours-color-open: #188038;
+        --gmpx-hours-color-closed: #d50000;
+        --gmpx-rating-color: #ffb300;
+        --gmpx-rating-color-empty: #e0e0e0;
+    }
+</style>
+<script>
+    const CONFIGURATION = {
+        "locations": [
+            { "title": "Reynrel Infotech", "address1": "House no 46, LKRB Path", "address2": "Nabin Nagar, Assam, India", "coords": { "lat": 26.169988, "lng": 91.7758436 }, "placeId": "ChIJfXZkxTZZWjcRFtIZ2gCOnZs" }
+        ],
+        "mapOptions": { "center": { "lat": 38.0, "lng": -100.0 }, "fullscreenControl": true, "mapTypeControl": false, "streetViewControl": false, "zoom": 4, "zoomControl": true, "maxZoom": 17, "mapId": "" },
+        "mapsApiKey": "YOUR_API_KEY_HERE",
+        "capabilities": { "input": false, "autocomplete": false, "directions": false, "distanceMatrix": false, "details": false, "actions": false }
+    };
+
+</script>
+<script type="module">
+    document.addEventListener('DOMContentLoaded', async () => {
+        await customElements.whenDefined('gmpx-store-locator');
+        const locator = document.querySelector('gmpx-store-locator');
+        locator.configureFromQuickBuilder(CONFIGURATION);
+    });
+</script>
 
 <body>
     <header>
@@ -109,7 +157,7 @@
                             </span>
                             <span style="color: rgb(127, 127, 127);">Send us Email</span>
                         </div>
-                        <h3>panchananDeka162534@gmail.com</h3>
+                        <h3>info.reynrel@gmail.com</h3>
                     </div>
                     <div class="flex flex-col contact-detail">
                         <div class="flex contact-title">
@@ -119,6 +167,7 @@
                             <span style="color: rgb(127, 127, 127);">Give us a call</span>
                         </div>
                         <h3>+91 6000192289</h3>
+                        <h3>+91 9401069337</h3>
                     </div>
                     <div class="flex flex-col contact-detail">
                         <div class="flex contact-title">
@@ -128,6 +177,7 @@
                             <span style="color: rgb(127, 127, 127);">Chat on Whatsapp</span>
                         </div>
                         <h3>+91 6000192289</h3>
+                        <h3>+91 9401069337</h3>
                     </div>
                 </div>
             </div>
@@ -161,7 +211,7 @@
                     <div class="form-group">
                         <label for="phone">Phone  
                             Number:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your Number" >
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your Number">
                     </div>
                     <div class="form-group">
                         <label for="query">Query:</label>  
@@ -172,7 +222,14 @@
             </div>
         </div>
     </section>
+  <!-- Please note unpkg.com is unaffiliated with Google Maps Platform. -->
+  <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
 
+  <!-- Uses components from the Extended Component Library; see
+       https://github.com/googlemaps/extended-component-library for more information
+       on these HTML tags and how to configure them. -->
+  <gmpx-api-loader key="YOUR_API_KEY_HERE" solution-channel="GMP_QB_locatorplus_v10_c"></gmpx-api-loader>
+  <gmpx-store-locator map-id="DEMO_MAP_ID"></gmpx-store-locator>
     <!-- footer -->
     <footer class="flex footer-section">
         <div class="main-footer-container">
@@ -250,3 +307,6 @@
 </body>
 
 </html>
+
+
+

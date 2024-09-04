@@ -957,6 +957,15 @@ form.get-a-quote i {
     padding: 23px;
     border-bottom-left-radius: 0;
 }
+.pricing-plans-data img {
+    width: 90px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  
+}
 
 .pricing-plans-data svg {
     fill: #8f5fb1;
