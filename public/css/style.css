@@ -73,6 +73,26 @@ header {
 .nav-container nav ul li{
     display: flex; 
     align-items: center;
+    justify-content: center;
+    gap: 5px;
+ }
+
+ .nav-container nav ul li a{
+     position: relative;
+ }
+
+.nav-container nav ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: #f06c06;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -8px;
+ }
+
+ .nav-container nav ul li a:hover:after{
+    width: 100%;
  }
 
 .hero-container {

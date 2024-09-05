@@ -32,6 +32,14 @@ button {
     box-shadow: 0px 20px 30px #ffe7d5;
 }
 
+.btn-hover:hover {
+    border: 1px solid #f06c06;
+    color: #f06c06;
+    background: #fff;
+    cursor: pointer;
+}
+
+
 .title-container > * {
     display: inline-block;
 }
